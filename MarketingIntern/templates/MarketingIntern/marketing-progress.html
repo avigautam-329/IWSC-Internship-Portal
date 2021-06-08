@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="iw_logo.ico" />
+    <link rel="stylesheet" href="css/co-ordinator.css" type="text/css">
+    <link rel="stylesheet" href="css/progress.css" type="text/css">
+    <link href="css/dycalendar.min.css" rel="stylesheet" />
+    <title>INCEPTION WAVE</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light p-0 shadow">
+        <button class="navbar-toggler position-absolute d-lg-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu" class=" col-lg-2 d-lg-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3 side-bar text-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <img src="assets/co-ordinator/dummy-img.png">
+                            <h1>KRITARTH MITTAL</h1>
+                            <h4>MARKETING INTERN</h4>
+                            <p><img src="assets/co-ordinator/mail_outline.png">kritarth201@gmail.com</p>
+                            <p><img src="assets/co-ordinator/call.png">9163761085</p>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column mb-2 side-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="assets/co-ordinator/intern.png" class="nav-icon">
+                                <p>Tasks</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="assets/co-ordinator/track-active.png" class="nav-icon">
+                                <p class="active">Progress</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="assets/co-ordinator/review.png" class="nav-icon">
+                                <p>FAQs</p>
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                    <p class="log-out"><img src="assets/co-ordinator/logout.png"> Logout</p>
+
+                </div>
+            </nav>
+            <div class="col-lg-7 content bg">
+                <div class="position-sticky d-flex justify-content-between">
+                    <h1>Internship Dashboard</h1>
+                    <div class="d-flex justify-content-end">
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                            <img src="assets/co-ordinator/search.png" class="search" style="right:8%;"> </form>
+                        <div class="notification text-center">
+                            <div class="dropdown dropleft" id="myDropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <img src="assets/co-ordinator/bell.png">
+                                      <div class="red"></div>
+                                    </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <h1>Notifications</h1>
+                                    <h5 class="text-center">TODAY</h5>
+                                    <div class=" d-flex justify-content-between">
+                                        <div style="width:234px!important;">
+                                            <a href="#">
+                                                <p>You have been assigned new task!</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="time" style="width:50px;">1h ago</p>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <div style="width:234px!important;">
+                                            <a href="#">
+                                                <p>Your mentor replied to you!
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="time" style="width:50px;">3h ago</p>
+                                        </div>
+                                    </div>
+
+                                    <span id="dots"></span>
+                                    <span id="more">
+                                            <div class=" d-flex justify-content-between">
+                                                <div style="width:234px!important;">
+                                                    <a href="#">
+                                                        <p>Your mentor replied to you!
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <p class="time" style="width:50px;">3h ago</p>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class=" d-flex justify-content-between">
+                                                <div style="width:234px!important;">
+                                                    <a href="#">
+                                                        <p>Your mentor replied to you!
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <p class="time" style="width:50px;">3h ago</p>
+                                                </div>
+                                            </div></span>
+                                    <button onclick="myFunction()" id="myBtn" class="older">CHECK OLDER &darr;</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hello-hr">
+                    <h1>Hello,<span class="name">Krittarth!</span> </h1>
+                    <p>Here's what's going on in Inception Wave.</p>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <h3>Progress</h3>
+                    <img src="assets/co-ordinator/filter.png">
+                </div>
+                <div class="progress-area row">
+                    <div class="circular col-lg-6">
+                        <h2 class="text-center">Tasks View</h2>
+                        <h3 class="text-center">Minimum 2 more tasks required</h3>
+                        <div class="progress blue">
+                            <span class="progress-left">
+                            <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                            <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">
+                                <p>25%</p>
+                                <p class="small">completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-wise col-lg-6">
+                        <h2>Skills developed</h2>
+                        <div class="d-flex justify-content-aroun">
+                            <div class="skill">
+                                <h1>HTML</h1>
+                            </div>
+                            <div class="progress blue-linear">
+                                <div class="progress-bar" style="width:25%; background:#109FDD;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="skill">
+                                <h1>CSS</h1>
+                            </div>
+                            <div class="progress blue-linear">
+                                <div class="progress-bar" style="width:90%; background:#109FDD;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="skill">
+                                <h1>JS</h1>
+                            </div>
+                            <div class="progress blue-linear">
+                                <div class="progress-bar" style="width:65%; background:#109FDD;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h2>Certificates</h2>
+                            <img src="/assets/co-ordinator/lock.png" class="lock">
+                        </div>
+                        <p>Once you have finished 3 tasks, your certificate will be ready</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h3>Reviews</h3>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr class="top-label">
+                            <th scope="col">Task Name</th>
+                            <th scope="col">Review</th>
+                            <th scope="col">Comments</th>
+                            <th scope="col">Submitted On</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+                            <td class="pending">Pending</td>
+                            <td class="comments">NA</td>
+                            <td>April 6,2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+
+                            <td class="reviewed">3.5/5</td>
+                            <td class="comments">'Well done'</td>
+                            <td>April 6,2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+                            <td class="pending">Pending</td>
+                            <td class="comments">NA</td>
+                            <td>April 6,2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+
+                            <td class="reviewed">3.5/5</td>
+                            <td class="comments">'Well done'</td>
+                            <td>April 6,2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+                            <td class="pending">Pending</td>
+                            <td class="comments">NA</td>
+                            <td>April 6,2021</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+
+                            <td class="reviewed">3.5/5</td>
+                            <td class="comments">'Well done'</td>
+                            <td>April 6,2021</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="col-lg-3 date bg">
+                <div class="curr-date">
+                    <img src="assets/co-ordinator/calendar_icon.png">
+                    <p id="day"> </p>
+                </div>
+                <div class="some-class">
+                    <div class="calendar-container">
+                        <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
+                    </div>
+                </div>
+
+                <div class="strength">
+                    <h1>Credentials</h1>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p>123RHT
+                                <br>
+                                <span class="mute">Intern ID</span></p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p>25MTH<br><span class="mute">Mentor ID</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="join-us">
+                    <h1>Join Us</h1>
+                    <div class="row">
+
+                        <div class="col-12 text-left" style="padding: 0 40px">
+                            <span class="mute">Initiate New Chapter</span>
+                            <br>
+                            <span class="mute">Join a Student Chapter</span>
+                            <br>
+                            <span class="mute">Join our Core Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script src="js/dycalendar.min.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar-month-with-skin-shadow',
+            type: 'month',
+            dayformat: "full",
+            monthformat: "full",
+            highlighttoday: true,
+            prevnextbutton: "show"
+        });
+        var d = new Date();
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
+        document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+        console.log(d);
+
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "CHECK OLDER &darr;	";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "GO BACK &uarr;	";
+                moreText.style.display = "inline";
+            }
+        }
+        $('#myDropdown .dropdown-menu').on({
+            "click": function(e) {
+                e.stopPropagation();
+            }
+        });
+    </script>
+</body>
+
+</html>

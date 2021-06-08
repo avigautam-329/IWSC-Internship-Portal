@@ -1,0 +1,258 @@
+{% load static %}
+{% load bootstrap5 %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="iw_logo.ico" />
+    
+    <link rel="stylesheet" href="{% static "Coordinator/css/co-ordinator.css" %}" type="text/css">
+    <link href="{% static "Coordinator/css/dycalendar.min.css" %}" rel="stylesheet" />
+    <title>INCEPTION WAVE</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg  bg-light p-0 shadow">
+        <button class="navbar-toggler position-absolute d-lg-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+
+            <nav id="sidebarMenu" class=" col-lg-2 d-lg-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3 side-bar text-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <img src="{% static "media/images/coordinator/dummy-img.png" %}">
+                            <h1>KRITARTH MITTAL</h1>
+                            <h4>INTERNSHIP CO-ORDINATOR</h4>
+                            <p><img src="{% static "media/images/coordinator/mail_outline.png" %}">kritarth201@gmail.com</p>
+                            <p><img src="{% static "media/images/coordinator/call.png" %}">9163761085</p>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column mb-2 side-nav">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="{% static "media/images/coordinator/intern.png" %}" class="nav-icon">
+                                <p>Interns</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="{% static "media/images/coordinator/track.png" %}" class="nav-icon">
+                                <p>Tracking</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex justify-content-around" href="#">
+                                <img src="{% static "media/images/coordinator/review-active.png" %}" class="nav-icon">
+                                <p class="active">Review</p>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <p class="log-out"><img src="{% static "media/images/coordinator/logout.png" %}"> Logout</p>
+
+                </div>
+            </nav>
+            <div class="col-lg-7 content bg">
+                <div class="position-sticky d-flex justify-content-between">
+                    <h1>Internship Dashboard</h1>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                        <img src="{% static "media/images/coordinator/search.png" %}" class="search"> </form>
+                </div>
+                <div class=" hello-hr">
+                    <h1>Hello,<span class="name">Krittarth!</span> </h1>
+                    <p>Here's what's going on in Inception Wave.</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <h3>Interns</h3>
+                    <img src="{% static "media/images/coordinator/filter.png" %}">
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr class="top-label">
+                            <th scope="col">Name</th>
+                            <th scope="col">Domain</th>
+                            <th scope="col">Task Status</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Anoushka Halder</th>
+                            <td>HR</td>
+                            <td>Hi, I’m Anou..</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">View Profile</a>
+                                        <a class="dropdown-item" href="#">Accept Request</a>
+                                        <a class="dropdown-item" href="#">Reject Accept</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-lg-3 date bg">
+                <div class="curr-date">
+                    <img src="{% static "media/images/coordinator/calendar_icon.png" %}">
+                    <p id="day"> </p>
+                </div>
+                <div class="some-class">
+                    <div class="calendar-container">
+                        <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
+                    </div>
+                </div>
+
+                <div class="strength">
+                    <h1>Current Strength</h1>
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <p>48<br><span class="mute">Total Interns</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="join-us">
+                    <h1>Join Us</h1>
+                    <div class="row">
+
+                        <div class="col-12 text-left" style="padding: 0 40px">
+                            <span class="mute">Initiate New Chapter</span>
+                            <br>
+                            <span class="mute">Join a Student Chapter</span>
+                            <br>
+                            <span class="mute">Join our Core Team</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script src="{% static "Coordinator/js/dycalendar.min.js" %}"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar-month-with-skin-shadow',
+            type: 'month',
+            dayformat: "full",
+            monthformat: "full",
+            highlighttoday: true,
+            prevnextbutton: "show"
+        });
+        var d = new Date();
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
+        document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+        console.log(d);
+    </script>
+</body>
+
+</html>

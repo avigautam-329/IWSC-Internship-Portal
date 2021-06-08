@@ -1,0 +1,856 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+.content,
+.date {
+    margin: 0;
+    background: rgba(140, 185, 226, 0.21);
+}
+
+#sidebarMenu {
+    background: #fff!important;
+}
+
+.side-bar {
+    background: #fff;
+}
+
+.name {
+    color: #0A587A;
+}
+
+.bg {
+    background: #F3F8FC;
+}
+
+.hello {
+    background: url("/assets/co-ordinator/top-bg.png");
+    padding: 2%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.hello-hr {
+    background: url("/assets/co-ordinator/hr-bg.png");
+    padding: 2%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.side-bar {
+    padding-top: 3%;
+}
+
+.side-bar h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+    margin-top: 5%;
+}
+
+.side-bar h4 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+.side-bar p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.46);
+    margin-bottom: 0;
+}
+
+.side-nav {
+    padding-top: 35%;
+}
+
+.side-nav p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #757070;
+    padding: 5% 0;
+}
+
+.side-nav a {
+    margin: 10% 0;
+}
+
+.side-nav .active {
+    color: #109FDD;
+}
+
+.log-out {
+    position: absolute;
+    left: 25%;
+    bottom: 2%;
+    padding-top: 20%;
+}
+
+p.log-out {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.content {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.content h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0A587A;
+    padding: 5% 0;
+}
+
+.hello h1,
+.hello-hr h1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    color: #062A39;
+    padding: 0;
+}
+
+.hello p,
+.hello-hr p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #062A39;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0A587A;
+    padding-top: 3%;
+}
+
+.top-label th {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #263238;
+    text-align: center;
+}
+
+.table td,
+.table thead th,
+.table th {
+    border-bottom: none;
+    border-top: none
+}
+
+tbody tr {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+    width: 879px;
+    height: 62px;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+tr>th {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+tr>td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+input[type="search"] {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.search {
+    position: absolute;
+    right: 3%;
+}
+
+.date {
+    padding-top: 3%;
+}
+
+.date p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: #0A587A;
+}
+
+.some-class {
+    padding-top: 18%;
+}
+
+.dycalendar-month-container {
+    width: 210px;
+    height: 230px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dycalendar-container.shadow-default {
+    box-shadow: none!important;
+}
+
+.dycalendar-month-container .dycalendar-span-month-year {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.dycalendar-body table {
+    border-collapse: separate;
+    margin: 0;
+}
+
+.dycalendar-body table tbody tr {
+    height: 15px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+    background: none;
+    box-shadow: none;
+}
+
+.dycalendar-body table tr>td:last-child {
+    border-radius: 0;
+}
+
+.dycalendar-month-container .dycalendar-target-date,
+.dycalendar-month-container .dycalendar-today-date {
+    background-color: #CEEDFF!important;
+    border-radius: 50%!important;
+    color: #0A587A!important;
+}
+
+.dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
+    right: 20px;
+}
+
+.strength {
+    width: 227px;
+    height: 121px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 7%;
+    margin-top: 35%;
+}
+
+.join-us {
+    width: 227px;
+    height: 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 7%;
+    margin-top: 15%;
+}
+
+.strength h1,
+.join-us h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.strength p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #263238;
+}
+
+.mute {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #757070;
+}
+
+.pending {
+    color: #FFBD00;
+}
+
+.completed {
+    color: #2DA771;
+}
+
+.missing {
+    color: #DE5753;
+}
+
+.dropleft .dropdown-toggle::before {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.down,
+.down:focus {
+    border: none;
+    outline: none;
+    background: url("/assets/co-ordinator/drop.png");
+}
+
+.dropdown-menu {
+    width: 227px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    top: -40px!important;
+}
+
+.dropdown-menu a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.curr-date p {
+    display: inline;
+}
+
+.notification button {
+    width: 28px;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 35px;
+    border: none;
+    border-color: transparent;
+    position: relative;
+    z-index: 1000;
+}
+
+.notification button:hover,
+.notification button:active,
+.notification button:focus,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    width: 28px;
+    height: 35px;
+    background: #fff!important;
+    border: none;
+    border-color: transparent;
+}
+
+.notification button img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+
+.old {
+    margin-top: 0;
+    background: inherit;
+    width: 100%;
+}
+
+.old h3 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(117, 112, 112, 0.61);
+}
+
+.nav-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.panel {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 2% 2% 0;
+}
+
+.panel-body {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.46);
+    padding: 2%;
+}
+
+.panel-group .panel-heading {
+    padding: 0;
+}
+
+.panel-heading {
+    height: 62px;
+}
+
+.panel-group .panel-heading a {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #109FDD;
+}
+
+.panel-group .panel-heading a:after {
+    content: '-';
+    float: right;
+    color: black;
+}
+
+.panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    color: black;
+}
+
+.faq {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #263238;
+}
+
+.modal-content {
+    padding: 2% 5%;
+    border-radius: 15px;
+}
+
+.modal-footer {
+    border-top: none;
+    display: block;
+    font-family: Quicksand;
+}
+
+.modal-header {
+    display: block;
+    border-bottom: none;
+}
+
+.modal-header h5 {
+    font-weight: bold;
+    color: #263238;
+}
+
+.modal-content label {
+    color: #757070;
+    font-size: 12px;
+}
+
+input::placeholder {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    width: 85%;
+    color: #263238!important;
+}
+
+input,
+select {
+    border-top-color: transparent!important;
+    border-left-color: transparent!important;
+    border-right-color: transparent!important;
+}
+
+.modal-content .form-control,
+#customFile {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+.form-control:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#custom-select {
+    font-weight: bold;
+    max-width: 100%;
+    overflow: hidden;
+    color: #263238;
+}
+
+#custom-select:focus {
+    max-width: auto;
+    overflow: hidden;
+}
+
+.modal-footer button {
+    width: 88px;
+    height: 33px;
+    background: #109FDD!important;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.submit-task {
+    width: 88px;
+    height: 33px;
+    background: #109FDD;
+    border-radius: 7px;
+    margin-top: 15px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+@media(max-width:575px) {
+    .side-nav {
+        padding-top: 5%;
+    }
+    .side-bar {
+        height: 75vh;
+    }
+    .log-out {
+        left: 39%;
+        bottom: 3%;
+    }
+    .content {
+        padding: 20% 2%;
+    }
+    .navbar-light .navbar-toggler {
+        margin-top: 20%;
+        margin-left: 5%;
+        z-index: 1000;
+    }
+    .content h1 {
+        font-size: 20px;
+    }
+    .hello p,
+    .hello-hr p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .top-label th {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    tbody tr {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .date {
+        padding: 3% 22%;
+    }
+}
+
+@media(max-width:330px) {
+    .content h1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .hello p,
+    .hello-hr p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .top-label th {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    tbody tr {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .date {
+        padding: 3% 17%;
+    }
+}
+
+@media(min-width:597px) and (max-width:1000px) {
+    .navbar-light .navbar-toggler {
+        margin-top: 20%;
+        margin-left: 5%;
+        z-index: 1000;
+    }
+    .content {
+        padding: 15% 4%;
+    }
+    .date {
+        padding: 0 35%;
+    }
+    .side-nav {
+        padding-top: 5%;
+    }
+    .side-bar {
+        height: 75vh;
+    }
+    .log-out {
+        left: 39%;
+        bottom: 3%;
+    }
+}
+
+@media(min-height:1000px) {
+    .content,
+    .date {
+        height: 100vh;
+    }
+}
+
+#customFile .custom-file-control:lang(en)::before {
+    content: "Add a single file or link";
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+#customFile .custom-file-control:lang(en)::after {
+    content: url("/assets/co-ordinator/attach_file.png");
+    position: absolute;
+    right: 12%;
+}
+
+
+/*when a value is selected, this class removes the content */
+
+.custom-file-control.selected:lang(en)::before {
+    content: "" !important;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+#more {
+    display: none;
+}
+
+.notification .dropdown-menu {
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    top: 55%!important;
+    width: 260px;
+    padding: 0 20%;
+}
+
+.notification .dropdown-menu h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0A587A;
+}
+
+.notification .dropdown-menu h5 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.notification .dropdown-menu a p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+.notification .dropdown-menu .time {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.older {
+    width: 100%!important;
+    border-radius: 0!important;
+    box-shadow: none!important;
+    background: none!important;
+    margin-top: 0!important;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(117, 112, 112, 0.61);
+}
+
+.older:focus,
+.older:hover,
+.older:active {
+    border: none!important;
+    outline: none;
+}
+
+.line {
+    width: 103.02px;
+    height: 0px;
+    border: 0.2px solid rgba(0, 0, 0, 0.33);
+    transform: rotateX(-180deg);
+}
+
+.red {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #DE5753;
+    position: absolute;
+    right: 0;
+    top: -5px;
+}
+
+.d-flex {
+    z-index: 10;
+}
